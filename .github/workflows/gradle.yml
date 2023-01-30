@@ -32,9 +32,9 @@ jobs:
       with:
         arguments: build
     - name: Build and Push Docker Image
-      uses: docker/build-push-action@v2
+      uses: mr-smithers-excellent/docker-build-push@v5
       with:
-          image: mr-smithers-excellent/docker-build-push@v5
+          image: addisudalemu/cicd_demo
           registry: docker.io
           username: ${{ secrets.DOCKER_USERNAME }}
           password: ${{ secrets.DOCKER_PASSWORD }}
