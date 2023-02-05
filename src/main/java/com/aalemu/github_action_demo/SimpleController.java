@@ -11,6 +11,6 @@ public class SimpleController {
 
     @GetMapping("/")
     public String homePage() {
-        return "home of" + appName;
+        return "Home of the" + appName;
     }
 }
